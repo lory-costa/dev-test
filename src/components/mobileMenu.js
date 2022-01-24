@@ -2,9 +2,12 @@ import React from "react";
 
 const MobileMenu = ({ isMobileMenuOpened, handleClick }) => {
   return (
-    <div className='bg-white items-center flex justify-between py-4 sticky top-0 font-light xl:hidden'>
+    <div className='bg-white items-center flex justify-between py-4 sticky top-0 font-light lg:hidden'>
       {isMobileMenuOpened ? (
-        <div className='space-y-1.5 text-orange' onClick={handleClick}>
+        <div
+          className='space-y-1.5 text-orange cursor-pointer'
+          onClick={handleClick}
+        >
           <svg
             className='w-6'
             xmlns='http://www.w3.org/2000/svg'
@@ -22,7 +25,7 @@ const MobileMenu = ({ isMobileMenuOpened, handleClick }) => {
           </svg>
         </div>
       ) : (
-        <div className='space-y-1.5' onClick={handleClick}>
+        <div className='space-y-1.5 cursor-pointer' onClick={handleClick}>
           <span className='block w-5 h-[1px] bg-orange' />
           <span className='block w-5 h-[1px] bg-orange' />
           <span className='block w-3 h-[1px] bg-orange' />

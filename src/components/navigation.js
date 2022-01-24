@@ -4,17 +4,17 @@ import MenuDropdown from "./menuDropdown";
 const Navigation = ({ isMobileMenuOpened }) => {
   const [isDropdownOpened, setDropdownOpened] = useState(false);
   const menuItemClass =
-    "py-4 border-b-[1px] border-lightGrey xl:border-none xl:py-0 xl:px-3 " +
+    "py-4 border-b-[1px] border-lightGrey lg:border-none lg:py-0 lg:px-3 " +
     (isDropdownOpened ? "opacity-50" : "opacity-100"); // Be sure to replicate this change on academy item.
 
   return (
     <div
       className={
         (isMobileMenuOpened ? "flex" : "hidden") +
-        " text-darkBlue xl:items-center flex-col xl:flex"
+        " text-sm text-darkBlue lg:items-center flex-col lg:flex"
       }
     >
-      <ul className='flex flex-col w-full xl:flex-row'>
+      <ul className='flex flex-col w-full lg:flex-row'>
         <li className={menuItemClass}>
           <a href='#'>Membership</a>
         </li>
@@ -30,8 +30,8 @@ const Navigation = ({ isMobileMenuOpened }) => {
         <li
           onClick={() => setDropdownOpened(!isDropdownOpened)}
           className={
-            "py-4 border-b-[1px] border-lightGrey xl:border-none xl:py-0 xl:px-3 z-40 " +
-            (isDropdownOpened ? "z-20 border-none" : "z-0")
+            "py-4 border-b-[1px] border-lightGrey lg:border-none lg:py-0 lg:px-3 z-40 " +
+            (isDropdownOpened ? "z-20 border-none lg:relative absolute" : "z-0")
           }
         >
           <a
@@ -39,7 +39,7 @@ const Navigation = ({ isMobileMenuOpened }) => {
             className={
               "flex " +
               (isDropdownOpened
-                ? "flex-row-reverse justify-end xl:flex-row"
+                ? "flex-row-reverse justify-end lg:flex-row"
                 : "justify-between")
             }
           >
@@ -47,10 +47,10 @@ const Navigation = ({ isMobileMenuOpened }) => {
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className={
-                "h-5 w-5 xl:w-3 ml-1 text-orange xl:text-darkBlue " +
+                "h-5 w-5 lg:w-3 ml-1 text-orange lg:text-darkBlue " +
                 (isDropdownOpened
-                  ? "rotate-90 xl:rotate-180"
-                  : "-rotate-90 xl:rotate-0")
+                  ? "rotate-90 lg:rotate-180"
+                  : "-rotate-90 lg:rotate-0")
               }
               viewBox='0 0 20 20'
               fill='currentColor'
@@ -74,7 +74,7 @@ const Navigation = ({ isMobileMenuOpened }) => {
         </li>
         <li
           className={
-            "py-4 xl:py-0 xl:px-3 " +
+            "py-4 lg:py-0 lg:px-3 " +
             (isDropdownOpened ? "opacity-50" : "opacity-100")
           }
         >

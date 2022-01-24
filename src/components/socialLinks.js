@@ -4,7 +4,7 @@ const socialLinks = ({ isMobileMenuOpened }) => {
   return (
     <div
       className={
-        "w-full p-4 justify-between xl:hidden fixed bottom-0 " +
+        "w-full p-4 justify-between lg:hidden fixed bottom-0 " +
         (isMobileMenuOpened ? "flex" : "hidden")
       }
     >
@@ -13,7 +13,6 @@ const socialLinks = ({ isMobileMenuOpened }) => {
         href='#'
       >
         <img
-          className=''
           width='19'
           src='https://1m6n143uhgz333i25i4am7ul-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/instagram.svg'
           alt='Instagram'
@@ -24,7 +23,6 @@ const socialLinks = ({ isMobileMenuOpened }) => {
         href='#'
       >
         <img
-          className=''
           width='19'
           src='https://1m6n143uhgz333i25i4am7ul-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/youtube.svg'
           alt='YouTube'
@@ -35,7 +33,6 @@ const socialLinks = ({ isMobileMenuOpened }) => {
         href='#'
       >
         <img
-          className=''
           width='19'
           src='https://1m6n143uhgz333i25i4am7ul-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/linkedin.svg'
           alt='LinkedIn'
@@ -46,7 +43,6 @@ const socialLinks = ({ isMobileMenuOpened }) => {
         href='#'
       >
         <img
-          className=''
           width='19'
           src='https://1m6n143uhgz333i25i4am7ul-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/facebook.svg'
           alt='FaceBook'
@@ -57,7 +53,6 @@ const socialLinks = ({ isMobileMenuOpened }) => {
         href='#'
       >
         <img
-          className=''
           width='19'
           src='https://1m6n143uhgz333i25i4am7ul-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/twitter.svg'
           alt='Twitter'

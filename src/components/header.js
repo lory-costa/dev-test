@@ -13,14 +13,14 @@ const Header = () => {
   return (
     <div
       className={
-        "w-full xl:sticky bg-white py-1 xl:py-6 top-0 font-light " +
+        "w-full lg:sticky bg-white py-1 lg:p-6 top-0 font-light " +
         (isMobileMenuOpened ? "absolute" : "sticky")
       }
     >
-      <div className='container mx-auto px-4 xl:px-0 xl:items-start flex flex-col xl:flex-row justify-between'>
+      <div className='container mx-auto px-4 lg:px-0 lg:items-start flex flex-col lg:flex-row justify-between'>
         <div className='flex justify-between'>
           <img
-            className='w-[114px] xl:w-[190px]'
+            className='w-[114px] lg:w-[190px]'
             src={Logo}
             alt='Girls in Tech logo'
           />
@@ -30,7 +30,7 @@ const Header = () => {
           />
         </div>
         <Navigation isMobileMenuOpened={isMobileMenuOpened} />
-        <button className='hidden xl:flex border-orange border-2 bg-orange hover:bg-orangeHover hover:border-orangeHover text-white py-2 px-8 rounded-full font-light'>
+        <button className='hidden lg:flex border-orange border-2 bg-orange hover:bg-orangeHover hover:border-orangeHover text-sm text-white py-2 px-8 rounded-full font-light'>
           Join Us
         </button>
       </div>
