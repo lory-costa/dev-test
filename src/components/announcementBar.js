@@ -2,14 +2,12 @@ import React from "react";
 
 const AnnouncementBar = () => {
   return (
-    <div className='bg-darkBlue flex flex-col text-lightPink h-14 text-lg py-4 items-center'>
-      <p>
-        You don't want to miss our upcoming events -&nbsp;
+    <div className='bg-darkBlue flex flex-col text-lightPink items-center text-sm py-3 font-extralight w-100'>
+      <p className='text-center'>
+        <span>You don't want to miss our upcoming events - </span>
         <a
-          className='border-b-[1px] border-lightPink hover:border-[transparent] transition duration-200'
-          href='https://girlsintech.org/events/'
-          target='_blank'
-          tabindex='0'
+          className='border-b-[1px] border-lightPink hover:border-[transparent] transition duration-200 whitespace-nowrap'
+          href='#'
         >
           Reserve your spot now!
         </a>
