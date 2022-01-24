@@ -1,9 +1,10 @@
 import * as React from "react";
+import AnnouncementBar from "../components/announcementBar";
 
 const IndexPage = () => {
   return (
     <main>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+      <AnnouncementBar />
     </main>
   );
 };
