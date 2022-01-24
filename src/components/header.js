@@ -19,11 +19,13 @@ const Header = () => {
     >
       <div className='container mx-auto px-4 lg:px-0 lg:items-start flex flex-col lg:flex-row justify-between'>
         <div className='flex justify-between'>
-          <img
-            className='w-[114px] lg:w-[190px]'
-            src={Logo}
-            alt='Girls in Tech logo'
-          />
+          <a href='#'>
+            <img
+              className='w-[114px] lg:w-[190px]'
+              src={Logo}
+              alt='Girls in Tech logo'
+            />
+          </a>
           <MobileMenu
             handleClick={handleMobileMenuClick}
             isMobileMenuOpened={isMobileMenuOpened}
