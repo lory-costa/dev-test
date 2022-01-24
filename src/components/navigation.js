@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MenuDropdown from "./menuDropdown";
+import MenuDropdown from "./MenuDropdown";
 
 const Navigation = ({ isMobileMenuOpened }) => {
   const [isDropdownOpened, setDropdownOpened] = useState(false);
