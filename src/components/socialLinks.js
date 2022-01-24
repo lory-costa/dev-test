@@ -1,6 +1,6 @@
 import React from "react";
 
-const socialLinks = ({ isMobileMenuOpened }) => {
+const SocialLinks = ({ isMobileMenuOpened }) => {
   return (
     <div
       className={
@@ -62,4 +62,4 @@ const socialLinks = ({ isMobileMenuOpened }) => {
   );
 };
 
-export default socialLinks;
+export default SocialLinks;

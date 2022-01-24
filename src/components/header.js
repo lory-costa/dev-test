@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Logo from "./../images/logo.svg";
-import MobileMenu from "./mobileMenu";
-import Navigation from "./navigation";
-import SocialLinks from "./socialLinks";
+import MobileMenu from "./MobileMenu";
+import Navigation from "./Navigation";
+import SocialLinks from "./SocialLinks";
 
 const Header = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
