@@ -1,54 +1,47 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
 
-## 🚀 Quick start
+# Dev Test
 
-1.  **Create a Gatsby site.**
+> Replicating the banner, header and hero of https://girlsintech.org/
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+> [Live demo here](https://devtestmain.gatsbyjs.io/)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+### From the command line
 
-2.  **Start developing.**
+```bash
+npm install # to install dependencies
+npm start # to start the dev server
+```
 
-    Navigate into your new site’s directory and start it up.
+You can find the server running on [http://localhost:8000](http://localhost:8000).
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+## What was done
 
-    Your site is now running at http://localhost:8000!
+Replication using React and Tailwind.
+- Banner created and made responsible, with transition effect on link.
+- Banner is not visible while on mobile with menu opened.
+- Header (logo + navigation + button) created, and made responsive reusing the same template.
+- Jobs link toggles dropdown and changes opacity of other menu items when Jobs dropdown is opened.
+- Navigation is displayed differently on mobile, with a different dropdown presentation for Jobs.
+- Mobile button created to open and close navigation on mobile.
+- Social links bar created for mobile with menu opened.
+- Custom colours added as Tailwind variable.
+- Hero banner created and made responsive.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Challenges
 
-4.  **Learn more**
+For the navigation menu's mobile view, I thought of two options: build two different components, or try to reuse the same component and make it responsive.
+The first option might have been a bit easier to read, but would generate a lot of repetition, so I decided to try the second approach.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Next steps
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- [ ] Center-align logo and navigation bar (they came out of place after the implementation of the dropdown menu)
+- [ ] Add shadow to sticky header
+- [ ] Hide social links component when dropdown "Jobs" is opened on mobile view
+- [ ] Find, import and consume similar font (the one they use is paid)
+- [ ] Create component for primary and secondary buttons
+- [ ] Write some tests
+- [ ] Fix build warnings (href attributes)
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
